@@ -1,0 +1,5 @@
+app.old/*
+bower*
+.DS_Store
+*.scssc
+app/lib/*

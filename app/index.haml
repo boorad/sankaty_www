@@ -1,0 +1,116 @@
+/
+<!doctype html>
+%html.no-js{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %title Sankaty Consulting, LLC
+    %meta{:content => "Sankaty Consulting Public Web Presence", :name => "description"}/
+    %meta{:content => "boorad", :name => "author"}/
+    %meta{:content => "http://images.fineartamerica.com/images-medium-large/sankaty-head-lighthouse-nantucket-jack-flash.jpg", :name => "background image credit"}/
+    %link{:href => "lib/bootstrap/css/bootstrap.min.css", :media => "screen", :rel => "stylesheet"}/
+    %link{:href => "css/app.css", :media => "screen", :rel => "stylesheet"}/
+    %script{:src => "lib/jquery/jquery.min.js"}
+    %script{:src => "lib/bootstrap/js/bootstrap.min.js"}
+    %script{:src => "js/init.js"}
+    :css
+  %body
+    %nav.navbar.navbar-default.navbar-fixed-top( role="navigation" )
+      .container-fluid
+        .navbar-header
+          %button.navbar-toggle( type="button" data-toggle="collapse" data-target="#sgi-navbar-collapse-1" )
+            %span.sr-only Toggle navigation
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          %a.navbar-brand( href="#" ) Sankaty Consulting
+
+        #sgi-navbar-collapse-1.collapse.navbar-collapse
+          %ul.nav.navbar-nav
+            %li#s_home.active
+              %a( href="#home" ) Home
+            %li#s_about
+              %a( href="#about" ) About Us
+            %li#s_contact
+              %a( href="#contact" ) Contact
+
+    / Section #1
+    %section#home{"data-speed" => "6", "data-type" => "background"}
+      .container
+        .row
+          .col-md-3
+          .col-md-9.text-center.content-box
+            %h2 Modern Analytics Systems and Strategy
+            %p
+              Sankaty Consulting provides expert strategy and implementation services for state-of-the-art analytics systems.
+
+    / Section #2
+    %section#about{"data-speed" => "4", "data-type" => "background"}
+      .container
+        .row
+          .col-md-3
+          .col-md-4.well.content-box
+            %h2 Marketing Strategy
+            %p Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+            %p
+              %a.btn.btn-success{:href => "#"} View details &raquo;
+          .col-md-1
+          .col-md-4.well.content-box
+            %h2 Big Data Analytics
+            %p Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum odio, dapibus ac in, massa justo sit amet.
+            %p
+              %a.btn.btn-success{:href => "#"} View details &raquo;
+
+    / Section #3
+    %section#contact{"data-speed" => "2", "data-type" => "background"}
+      .container
+        .page-header
+          %h1
+            Final Section Headline
+            %small Some subtext goes here...
+        .row
+          .col-md-4
+            %h2 More Details
+            %p Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque cursus nisl consectetur et.
+            %p Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque cursus nisl consectetur et.
+            %p
+              %a.btn.btn-success View details &raquo;
+          .col-md-4
+            %h2 Heading
+            .media
+              %a.pull-left{:href => "#"}
+                %img.media-object{:src => "images/check.png"}/
+              .media-body
+                %h4.media-heading Media heading
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante.
+            .media
+              %a.pull-left{:href => "#"}
+                %img.media-object{:src => "images/check.png"}/
+              .media-body
+                %h4.media-heading Media heading
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante.
+            .media
+              %a.pull-left{:href => "#"}
+                %img.media-object{:src => "images/check.png"}/
+              .media-body
+                %h4.media-heading Media heading
+                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante.
+          .col-md-4
+            %h2 Log In
+            %form.form
+              .control-group
+                %label.control-label{:for => "inputEmail"} Email
+                .controls
+                  %input#inputEmail{:placeholder => "Email", :type => "text"}/
+              .control-group
+                %label.control-label{:for => "inputPassword"} Password
+                .controls
+                  %input#inputPassword{:placeholder => "Password", :type => "password"}/
+              .control-group
+                .controls
+                  %label.checkbox
+                    %input{:type => "checkbox"}/
+                    Remember me
+                    %br/
+                    %br/
+                  %button.btn.btn-success{:type => "submit"} Sign in
+          / /.span4
